@@ -31,3 +31,4 @@
         - nodemon
         - gulp
         - grunt
+        - bower
