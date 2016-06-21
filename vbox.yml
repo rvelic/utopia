@@ -1,0 +1,8 @@
+
+- hosts: all
+  sudo: true
+  tasks:
+    - name: Install Guest Additions
+      apt: name=virtualbox-guest-utils state=present
+    - name: Add the ansible user to vboxsf group
+      user: name={{ansible_user_id}} groups=vboxsf append=yes
