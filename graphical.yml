@@ -23,6 +23,9 @@
     - name: Ensure gparted is installed
       apt: name=gparted state=present
 
+    - name: Ensure favorite font is installed
+      apt: name=fonts-inconsolata
+
 
 - hosts: all
   tags: personal
